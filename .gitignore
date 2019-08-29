@@ -1,2 +1,4 @@
+# bixby files
+*.bxb
+
 node_modules/
-.bxb
