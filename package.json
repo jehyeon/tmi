@@ -19,5 +19,8 @@
   "homepage": "https://github.com/jehyeon/lmn#readme",
   "devDependencies": {
     "electron": "^6.0.5"
+  },
+  "dependencies": {
+    "fs": "0.0.1-security"
   }
 }
