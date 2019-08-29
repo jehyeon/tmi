@@ -2,8 +2,9 @@
   "name": "lmn",
   "version": "0.0.1",
   "description": "Learning data management",
-  "main": "main.js",
+  "main": "lib/main.js",
   "scripts": {
+    "start": "electron .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/jehyeon/lmn/issues"
   },
-  "homepage": "https://github.com/jehyeon/lmn#readme"
+  "homepage": "https://github.com/jehyeon/lmn#readme",
+  "devDependencies": {
+    "electron": "^6.0.5"
+  }
 }
