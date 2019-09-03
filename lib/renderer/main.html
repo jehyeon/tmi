@@ -3,8 +3,67 @@
   <head>
     <meta charset="UTF-8">
     <title>manage</title>
+    <style>
+      body {
+        margin: 0;
+      }
+
+      #navigation {
+        padding: 20px;
+        max-width: 230px;
+        background-color: #555;
+      }
+
+      #navigation input[type="file"] {
+        width: 0;
+        height: 0;
+      }
+      
+      #navigation label {
+        background-color: #333;
+        border-radius: 20px;
+        width: 200px;
+        color: #666;
+        padding: 5px 100px 5px 10px;
+        margin-left: -15px;
+      }
+      #navigation h2 {
+        color: #eee;
+        font-size: 13pt;
+      }
+
+      #targets {
+        padding: 0;
+
+      }
+
+      #targets > li {
+        list-style: none;
+        margin-bottom: 0.3em;
+        font-size: 11pt;
+        color: #777;
+        font-weight: 300;
+      }
+
+      #targets > li[exist="true"] {
+        color: #aaa;
+        font-weight: 400;
+      }
+
+      /* focus시 */
+      /* font-weight: bold; */
+      /* font-color: white */
+
+    </style>
   </head>
   <body>
-    <input id="file" type="file" webkitdirectory directory />
+    <div id="navigation">
+      <input id="file" type="file" webkitdirectory directory />
+      <label for="file">Choose a capsule</label>
+      <h2>viv.contactApp</h2>
+      <ul id="targets">
+      </ul>
+    </div>
+    <script src="main_render.js"></script>
   </body>
 </html>
