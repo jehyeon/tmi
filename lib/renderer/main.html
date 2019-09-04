@@ -3,57 +3,93 @@
   <head>
     <meta charset="UTF-8">
     <title>manage</title>
+    <!-- Google web fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&display=swap" rel="stylesheet">
     <style>
-      body {
+      * {
+        font-family: 'Roboto', sans-serif;
+
+        cursor: default;
+      }
+
+      html, body {
+        height: 100%;
         margin: 0;
       }
 
-      #navigation {
-        padding: 20px;
-        max-width: 230px;
-        background-color: #555;
-      }
-
-      #navigation input[type="file"] {
-        width: 0;
-        height: 0;
-      }
-      
-      #navigation label {
-        background-color: #333;
-        border-radius: 20px;
-        width: 200px;
-        color: #666;
-        padding: 5px 100px 5px 10px;
-        margin-left: -15px;
-      }
-      #navigation h3 {
+      h2 {
+        display: inline-block;
+        margin: 0;
         color: #eee;
         font-size: 11pt;
       }
 
-      #targets {
+      ul {
+        margin: 0;
         padding: 0;
-
       }
 
-      #targets > li {
+      li {
         list-style: none;
-        margin-bottom: 0.3em;
+
+        margin-top: 2px;
+        margin-left: 10px;
+      }
+
+      /* File input */
+      input[type="file"] {
+        width: 0;
+        height: 0;
+      }
+      label {
+        width: 200px;
+        color: #eee;
         font-size: 11pt;
-        color: #777;
-        font-weight: 300;
+        cursor: pointer;
+      }
+      
+      #navigation {
+        max-width: 230px;
+        height: 100%;
+        padding: 20px;
+        background-color: #555;
+
+        overflow: scroll;
       }
 
-      #targets > li[exist="true"] {
+      .capsule {
+        margin-top: 10px;
+      }
+      .capsule > h3 {
+        margin: 0;
+        font-weight: 600;
+        font-size: 11pt;
+        color: #eee;
+
+        cursor: pointer;
+      }
+
+      .targets > li.target {
         color: #aaa;
-        font-weight: 400;
+        font-size: 11pt;
+
+        cursor: pointer;
       }
 
-      /* focus시 */
-      /* font-weight: bold; */
-      /* font-color: white */
+      .targets > li.target[exist='false'] {
+        color: #777;
+        cursor: default;
+      }
 
+      /* Scroll bar */
+      ::-webkit-scrollbar {
+        width: 8px;
+        /* 냅두면 안 보이게 */
+      }
+      ::-webkit-scrollbar-thumb {
+        background-color: #aaa;
+        /* 투명하게 */
+      }
     </style>
   </head>
   <body>
@@ -61,7 +97,16 @@
       <h2>Capsules</h2>
       <input id="file" type="file" webkitdirectory directory />
       <label for="file">+</label>
-      <ul id="targets">
+      <ul id="capsules">
+        <!-- ex.
+        <li class="capsule">
+          <h3>consumerApp</h3>
+          <ul class="targets">
+            <li class="target">bixby-mobile-ko-KR</li>
+            <li class="target">bixby-watch-ko-KR</li>
+          </ul>
+        </li>
+        -->
       </ul>
     </div>
     <script src="main_render.js"></script>
