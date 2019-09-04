@@ -21,6 +21,7 @@
     "electron": "^6.0.5"
   },
   "dependencies": {
+    "electron-store": "^4.0.0",
     "fs": "0.0.1-security"
   }
 }
