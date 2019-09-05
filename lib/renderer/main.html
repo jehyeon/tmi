@@ -36,6 +36,7 @@
         margin-left: 10px;
       }
 
+      /* NAVIGATION */
       /* File input */
       input[type="file"] {
         width: 0;
@@ -54,6 +55,7 @@
         padding: 20px;
         background-color: #555;
 
+        float: left;
         overflow: scroll;
       }
 
@@ -90,6 +92,21 @@
         background-color: #aaa;
         /* 투명하게 */
       }
+
+      /* MAIN PAGE */
+      ul#trainings {
+        left: 300px;
+        position: absolute;
+        overflow: scroll;
+        height: 100%;
+      }
+
+      ul#trainings > li {
+        margin-bottom: 10px;
+        border: 1px solid #eee;
+        padding: 10px;
+        border-radius: 5px;
+      }
     </style>
   </head>
   <body>
@@ -107,6 +124,11 @@
           </ul>
         </li>
         -->
+      </ul>
+    </div>
+    <div id="main">
+      <ul id="trainings">
+
       </ul>
     </div>
     <script src="main_render.js"></script>
