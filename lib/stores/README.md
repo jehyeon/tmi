@@ -9,6 +9,7 @@ none
 Output
 ```
 {
+  list: [capsule1, capsule2, ... ],
   capsule1: {
     path, targets
   },
@@ -29,6 +30,7 @@ Output
 {
   path: 'C:\Users\jehyeon\Documents\...',
   targets: {
+    list: ['bixby-mobile', 'bixby-watch'],
     'bixby-mobile': {
       exist: true
     }
@@ -39,13 +41,12 @@ Output
 }
 ```
 
-#### 1-3. addCapsule (capsuleName, capsulePath, targetsOfCapsule)
+#### 1-3. addCapsule (capsuleName, capsulePath)
 Input
 | Name | Type | Mandatory | Description |
 | ---- | ---- | :-------: | ----------- |
 | capsuleName | string | O | |
 | capsulePath | string | O | File absolute path, `capsule.bxb` must be in capsulePath |
-| targetsOfCapsule | Object | O | |
 
 
 Output
