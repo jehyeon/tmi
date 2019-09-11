@@ -4,6 +4,7 @@
 ### methods
 #### 1-1. getCapsules
 Input
+
 none
 
 Output
@@ -21,6 +22,7 @@ Output
 
 #### 1-2. getCapsule (capsuleName)
 Input
+
 | Name | Type | Mandatory | Description |
 | ---- | ---- | :-------: | ----------- |
 | capsuleName | string | O | |
@@ -43,6 +45,7 @@ Output
 
 #### 1-3. addCapsule (capsuleName, capsulePath)
 Input
+
 | Name | Type | Mandatory | Description |
 | ---- | ---- | :-------: | ----------- |
 | capsuleName | string | O | |
@@ -56,6 +59,7 @@ Same as 1-1
 
 #### 1-4. deleteCapsule (capsuleName)
 Input
+
 | Name | Type | Mandatory | Description |
 | ---- | ---- | :-------: | ----------- |
 | capsuleName | string | O | |
@@ -65,6 +69,6 @@ Output
 Same as 1-1
 ```
 
-2. Training store
+### 2. Training store
 to be update
 
