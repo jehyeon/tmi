@@ -30,7 +30,7 @@ Input
 Output
 ```
 {
-  path: 'C:\Users\jehyeon\Documents\...',
+  capsulePath: 'C:\Users\jehyeon\Documents\...',
   targets: {
     list: ['bixby-mobile', 'bixby-watch'],
     'bixby-mobile': {
