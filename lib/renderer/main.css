@@ -6,9 +6,15 @@
   cursor: default;
 }
 
+.no-drag {-ms-user-select: none; -moz-user-select: -moz-none; -webkit-user-select: none; -khtml-user-select: none; user-select:none;}
+
 input[type=file] {
   width: 0;
   height: 0;
+}
+
+label {
+  cursor: pointer;
 }
 
 h2 {
@@ -16,18 +22,44 @@ h2 {
   font-size: 14pt;
 }
 
+h3 {
+  display: inline-block;
+  font-size: 13pt;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+span.delete-capslue-button {
+  display: none;
+  cursor: pointer;
+}
+
+li.capsule:hover span.delete-capslue-button {
+  display: inline-block;
+}
+
 ul.targets {
   display: none;
 }
 
-li.capsule[selected] ul.targets {
+li.capsule[selected=true] ul.targets {
   display: block;
 }
 
 li.target {
-  padding: 20px;
+  padding: 10px;
   border: 1px solid #aaa;
   display: inline-block;
   border-radius: 10px;
-  margin: 10px;
+  margin: 5px;
+
+  cursor: pointer;
+}
+
+li.target[exist=false] {
+  display: none;
+}
+
+#main {
+  margin-top: 20px;
 }
