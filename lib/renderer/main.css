@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  cursor: default;
+}
+
+input[type=file] {
+  width: 0;
+  height: 0;
+}
+
+h2 {
+  display: inline-block;
+  font-size: 14pt;
+}
+
+ul.targets {
+  display: none;
+}
+
+li.capsule[selected] ul.targets {
+  display: block;
+}
+
+li.target {
+  padding: 20px;
+  border: 1px solid #aaa;
+  display: inline-block;
+  border-radius: 10px;
+  margin: 10px;
+}
