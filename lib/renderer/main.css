@@ -63,3 +63,10 @@ li.target[exist=false] {
 #main {
   margin-top: 20px;
 }
+
+ul#trainings li {
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+}
