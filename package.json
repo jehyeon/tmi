@@ -1,7 +1,7 @@
 {
-  "name": "lmn",
+  "name": "tmi",
   "version": "0.1.0",
-  "description": "Learning data management",
+  "description": "Trainings management implement",
   "main": "lib/main.js",
   "scripts": {
     "start": "electron .",
