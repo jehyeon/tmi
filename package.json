@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jehyeon/lmn.git"
+    "url": "git+https://github.com/jehyeon/tmi.git"
   },
   "author": "Jehyeon Lee",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jehyeon/lmn/issues"
+    "url": "https://github.com/jehyeon/tmi/issues"
   },
-  "homepage": "https://github.com/jehyeon/lmn#readme",
+  "homepage": "https://github.com/jehyeon/tmi#readme",
   "devDependencies": {
     "electron": "^6.0.5",
     "electron-builder": "^21.2.0"
