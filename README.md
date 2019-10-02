@@ -1,2 +1,2 @@
-# lmn
-Learning data management
+# tmi
+trainings management implement
