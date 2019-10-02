@@ -1,6 +1,6 @@
 {
   "name": "lmn",
-  "version": "0.0.9",
+  "version": "0.1.0",
   "description": "Learning data management",
   "main": "lib/main.js",
   "scripts": {
@@ -18,7 +18,8 @@
   },
   "homepage": "https://github.com/jehyeon/lmn#readme",
   "devDependencies": {
-    "electron": "^6.0.5"
+    "electron": "^6.0.5",
+    "electron-builder": "^21.2.0"
   },
   "dependencies": {
     "electron-store": "^4.0.0",
