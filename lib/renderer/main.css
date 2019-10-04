@@ -6,6 +6,10 @@
   cursor: default;
 }
 
+:focus {
+  outline: none;
+}
+
 .no-drag {-ms-user-select: none; -moz-user-select: -moz-none; -webkit-user-select: none; -khtml-user-select: none; user-select:none;}
 
 input[type=file] {
@@ -62,6 +66,27 @@ li.target[exist=false] {
 
 #main {
   margin-top: 20px;
+}
+
+input#search-bar {
+  border: 1px solid #aaa;
+  line-height: 30px;
+  width: 300px;
+  border-radius: 20px;
+  margin-left: 5px;
+  padding-left: 20px;
+}
+
+ul#training-infos {
+  font-size: 11pt;
+  margin: 10px 0 10px 10px;
+  list-style: none;
+  color: blue;
+}
+
+ul#training-infos li {
+  display: inline-block;
+  margin-right: 5px;
 }
 
 ul#trainings li {
