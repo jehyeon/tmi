@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>manage</title>
+    <!-- Google web fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&display=swap" rel="stylesheet" />
+    <link href="./main.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="header">
+      <!-- Navigation -->
+      <div id="navigation" class="no-drag">
+        <h1>Capsules</h1>
+        <img class="arrow" src="arrow_icon.svg" />
+        <ul id="capsules">
+          <li class="capsule" selected>contactApp</li>
+          <li class="capsule">phoneApp</li>
+          <li class="capsule">
+            <input id="file" type="file" webkitdirectory directory />
+            <label for="file">Add new capsule</label>
+          </li>
+        </ul>
+        <img class="arrow" src="Arrow_icon.svg" />
+        <ul id="targets">
+          <li class="target" selected>bixby-mobile-ko-KR</li>
+          <li class="target">bixby-mobile-en-US</li>
+          <li class="target">bixby-mobile-de-DE</li>
+          <li class="target">bixby-watch-ko-KR</li>
+          <li class="target">bixby-watch-en-US</li>
+          <li class="target">bixby-watch-de-DE</li>
+          <!-- ex.
+          <li class="capsule">
+            <h3>consumerApp</h3>
+            <ul class="targets">
+              <li class="target">bixby-mobile-ko-KR</li>
+              <li class="target">bixby-watch-ko-KR</li>
+            </ul>
+          </li>
+          -->
+        </ul>
+      </div>
+      <div id="search">
+        <img id="search-icon" src="search_icon.svg" />
+        <input id="search-bar" type="text" />
+      </div>
+    </div>
+    <div id="main">
+      <ul id="training-infos">
+        <li>count: 336</li>
+      </ul>
+      <ul id="trainings">
+          <li>[g:ContactInfo:continue:ContactInfo] Show (second)[v:Ordinal:Second] contact | Select (second)[v:Ordinal:First]</li>
+          <li>[g:ContactInfo:continue:ContactInfo] Show (Mraz)[v:FilterTerm] contact | Select (Mraz)[v:FilterTerm]</li>
+          <li>[g:ContactInfo:continue:ContactInfo] Select (third)[v:Ordinal:Thrid] (Json)[v:FilterTerm] contact</li>
+          <li>[g:CallingInfo#call:continue:*] call to this number</li>
+          <li>[g:CallingInfo#call:continue:*] (Video)[v:viv.call.CallMode:VIDEO] call to him</li>
+          <li>[g:CallingInfo#call:continue:*] call to (home)[v:viv.contact.PhoneType:Home] number of this contact</li>
+          <li>[g:CallingInfo#call:continue:ContactInfo] Call to (first)[v:viv.contactApp.Ordinal:First] contact</li>
+          <li>[g:SendMessage:continue:*,r:ComposeMessage] message to this contact</li>
+          <li>[g:SendMessage:continue:*,r:ComposeMessage] Send a message to (second)[v:viv.contactApp.Ordinal:Second] contact</li>
+          <li>[g:SendMessage:continue,r:EditMessageText] Edit text to (thank you)[v:viv.message.MessageText]</li>
+          <li>[g:SendMessage:continue,r:EditRecipient] Replace recipient to (Mike)[v:viv.contact.SearchTerm]</li>
+          <li>[g:DeleteContact:continue:ContactInfo] Delete this</li>
+          <li>[g:DeleteContact:continue:ContactInfo] Delete (second)[v:viv.contactApp.Ordinal:Second] contact</li>
+          <li>[g:ShareContact:continue:ContactInfo] Share this contact through (vcf)[v:viv.contactApp.ExportType:VCF]</li>
+          <li>[g:ShareContact:continue:ContactInfo] Share (first)[v:viv.contactApp.Ordinal:First] contact</li>
+          <li>[g:BlockContact:continue:ContactInfo] block this person</li>
+          <li>[g:BlockContact:continue:ContactInfo] block (third)[v:viv.contactApp.Ordinal:Third] person</li>
+      </ul>
+    </div>
+    <!-- <script src="main_render.js"></script> -->
+  </body>
+</html>

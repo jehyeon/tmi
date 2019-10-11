@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  cursor: default;
+  list-style: none;
+}
+
+#header {
+  padding-top: 23.5px;
+}
+
+#navigation {
+  display: inline-block;
+}
+
+h1 {
+  font-size: 12pt;
+  color: #000;
+  display: inline-block;
+  width: 165px;
+  text-align: center;
+}
+
+img.arrow {
+  position: relative;
+  top: 2px;
+  margin: 0 5px 0 5px;
+}
+
+#file {
+  width: 0;
+  height: 0;
+}
+
+ul#capsules {
+  display: inline-block;
+  width: 165px;
+  max-height: 240px;
+  text-align: center;
+  font-size: 12pt;
+}
+
+li.capsule {
+  display: none;
+}
+
+li.capsule[selected] {
+  display: block;
+}
+
+li.capsule[selected]:hover {
+  border: 1px solid black;
+  z-index: 999;
+  border-radius: 5px;
+  padding: 3px 0 3px 0;
+  margin: -3px 0;
+}
+
+ul#targets {
+  display: inline-block;
+  width: 165px;
+  max-height: 240px;
+  text-align: center;
+  font-size: 12pt;
+}
+
+li.target {
+  display: none;
+}
+
+li.target[selected] {
+  display: block;
+}
+
+li.target[selected]:hover {
+  border: 1px solid black;
+  z-index: 999;
+  border-radius: 5px;
+  padding: 3px 0 3px 0;
+  margin: -3px 0;
+}
+
+#search {
+  float: right;
+  margin-right: 30px;
+
+  display: inline-block;
+  background-color: #373737;
+
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+}
+
+input#search-bar {
+  display: inline-block;
+  width: 0;
+  line-height: 28px;
+  background-color: #373737;
+  border: 0;
+}
+
+#search-icon {
+  background-color: #373737;
+  width: 13px;
+  height: 14px;
+
+  position: relative;
+  top: 3px;
+  left: 50%;
+  margin-left: -6.5px;
+}
+
+/*  */
+
+#training-infos {
+  /* border: 1px solid; */
+  margin-top: 20px;
+  /* height: 25px; */
+  /* padding: 5px 0 0 30px; */
+  line-height: 50px;
+  height: 50px;
+  padding-left: 30px;
+  font-size: 11pt;
+  color: #777;
+  border: 1px solid;
+  border-radius: 15px;
+  margin: 30px 30px;
+}
+
+#trainings {
+  border: 1px solid black;
+  height: 400px;
+  margin: 0 30px;
+  background: #373737;
+  border-radius: 15px;
+  overflow-y: scroll;
+  color: #eee;
+}
+
+/* to be li.training */
+#trainings li {
+  padding: 15px;
+  border-bottom: 1px solid #aaa;
+  margin: 0px 2px;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
