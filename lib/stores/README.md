@@ -70,5 +70,59 @@ Same as 1-1
 ```
 
 ### 2. Training store
-to be update
+All datas
+```
+trainings: {
+  consumerApp: {
+    base: {
+      exist: false
+    },
+    'bixby-mobile-ko-KR': {
+      exist: true,
+      trianings: {
+        fileName: [
+          'raw_training',
+          'raw_training',
+          'raw_training',
+          ...
+        ],
+        fileName: [
+          'raw_training',
+          'raw_training',
+          'raw_training',
+          ...
+        ],
+        ...
+      },
+      verified: [
+        trainingsObj,
+        trainingsObj,
+        trainingsObj,
+        ...
+      ]
 
+    }
+  }
+}
+```
+verified object
+```
+verified: [
+  {
+    id: training_id,
+    anl: training_anl,
+    nl: training_nl,
+    plan: training_plan,
+    last_modified: training_last_modified,
+    file_name: training_file_name
+  },
+  {
+    id: training_id,
+    anl: training_anl,
+    nl: training_nl,
+    plan: training_plan,
+    last_modified: training_last_modified,
+    file_name: training_file_name
+  }
+]
+```
