@@ -33,6 +33,11 @@ h3 {
   cursor: pointer;
 }
 
+span.refresh-capsule-button {
+  color: blue;
+  cursor: pointer;
+}
+
 span.delete-capslue-button {
   display: none;
   cursor: pointer;
