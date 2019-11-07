@@ -6,97 +6,71 @@
   cursor: default;
 }
 
-:focus {
-  outline: none;
+html, body {
+  width: 100%;
+  height: 100%;
 }
 
-.no-drag {-ms-user-select: none; -moz-user-select: -moz-none; -webkit-user-select: none; -khtml-user-select: none; user-select:none;}
+#navigation {
+  position: absolute;
+  top: 0;
+  left: 0;
 
-input[type=file] {
-  width: 0;
-  height: 0;
+  height: 100%;
+
+  /* temp */
+  border: 1px solid black;
 }
+  /* Capsules header */
+  #navigation #navigationHeader h2 {
+    display: inline-block;
+    font-weight: 700;
+  }
+  #navigation #navigationHeader input[type=file] {
+    width: 0;
+    height: 0;
+  }
+  #navigation #navigationHeader label {
+    position: relative;
+    top: -2px;
 
-label {
-  cursor: pointer;
-}
+    cursor: pointer;
+  }
+  #navigation label:hover {
+    background-color: #eee;
+    border-radius: 50%;
+  }  
+  #navigation #capsules {
+    display: inline-block;
 
-h2 {
-  display: inline-block;
-  font-size: 14pt;
-}
+    vertical-align: top;
+    list-style: none;
+  }
+  #navigation #capsules .capsule {
+    cursor: pointer;
+  }
+  #navigation #capsules .capsule[selected=true] {
+    color: red;
+  }
+  #capsuleContextMenu {
+    position: absolute;
+    display: none;
+    padding: 5px;
+    background-color: #aaa;
+  }
 
-h3 {
-  display: inline-block;
-  font-size: 13pt;
-  margin-right: 5px;
-  cursor: pointer;
-}
-
-span.refresh-capsule-button {
-  color: blue;
-  cursor: pointer;
-}
-
-span.delete-capslue-button {
-  display: none;
-  cursor: pointer;
-}
-
-li.capsule:hover span.delete-capslue-button {
-  display: inline-block;
-}
-
-ul.targets {
-  display: none;
-}
-
-li.capsule[selected=true] ul.targets {
-  display: block;
-}
-
-li.target {
-  padding: 10px;
-  border: 1px solid #aaa;
-  display: inline-block;
-  border-radius: 10px;
-  margin: 5px;
-
-  cursor: pointer;
-}
-
-li.target[exist=false] {
-  display: none;
-}
+  #navigation #targets {
+    display: inline-block;
+    list-style: none;
+  }
+  #navigation #targets .target {
+    cursor: pointer;
+  }
+  #navigation #targets .target[selected=true] {
+    color: red;
+  }  
 
 #main {
-  margin-top: 20px;
-}
-
-input#search-bar {
-  border: 1px solid #aaa;
-  line-height: 30px;
-  width: 300px;
-  border-radius: 20px;
-  margin-left: 5px;
-  padding-left: 20px;
-}
-
-ul#training-infos {
-  font-size: 11pt;
-  margin: 10px 0 10px 10px;
-  list-style: none;
-  color: blue;
-}
-
-ul#training-infos li {
-  display: inline-block;
-  margin-right: 5px;
-}
-
-ul#trainings li {
-  border: 1px solid #eee;
-  border-radius: 10px;
-  padding: 10px;
-  margin: 10px;
+  position: absolute;
+  left: 200px;
 }

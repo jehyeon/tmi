@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  cursor: default;
+}
+
+:focus {
+  outline: none;
+}
+
+.no-drag {-ms-user-select: none; -moz-user-select: -moz-none; -webkit-user-select: none; -khtml-user-select: none; user-select:none;}
+
+input[type=file] {
+  width: 0;
+  height: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+h2 {
+  display: inline-block;
+  font-size: 14pt;
+}
+
+h3 {
+  display: inline-block;
+  font-size: 13pt;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+span.refresh-capsule-button {
+  color: blue;
+  cursor: pointer;
+}
+
+span.delete-capslue-button {
+  display: none;
+  cursor: pointer;
+}
+
+li.capsule:hover span.delete-capslue-button {
+  display: inline-block;
+}
+
+ul.targets {
+  display: none;
+}
+
+li.capsule[selected=true] ul.targets {
+  display: block;
+}
+
+li.target {
+  padding: 10px;
+  border: 1px solid #aaa;
+  display: inline-block;
+  border-radius: 10px;
+  margin: 5px;
+
+  cursor: pointer;
+}
+
+li.target[exist=false] {
+  display: none;
+}
+
+#main {
+  margin-top: 20px;
+}
+
+input#search-bar {
+  border: 1px solid #aaa;
+  line-height: 30px;
+  width: 300px;
+  border-radius: 20px;
+  margin-left: 5px;
+  padding-left: 20px;
+}
+
+ul#training-infos {
+  font-size: 11pt;
+  margin: 10px 0 10px 10px;
+  list-style: none;
+  color: blue;
+}
+
+ul#training-infos li {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+ul#trainings li {
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+}
