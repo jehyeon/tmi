@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  cursor: default;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+#navigation {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  height: 100%;
+
+  /* temp */
+  border: 1px solid black;
+}
+  /* Capsules header */
+  #navigation h2 {
+    font-weight: 600;
+  }
+  #navigation #capsules {
+    display: inline-block;
+
+    vertical-align: top;
+    list-style: none;
+  }
+  #navigation #capsules .capsule {
+    cursor: pointer;
+  }
+  #navigation #capsules .capsule[selected=true] {
+    color: red;
+  }
+  #capsuleContextMenu {
+    position: absolute;
+    display: none;
+    padding: 5px;
+    background-color: #aaa;
+  }
+
+  #navigation #targets {
+    display: inline-block;
+    list-style: none;
+  }
+  #navigation #targets .target {
+    cursor: pointer;
+  }
+  #navigation #targets .target[selected=true] {
+    color: red;
+  }  
+
+#main {
+  position: absolute;
+  left: 200px;
+}
