@@ -22,9 +22,24 @@ html, body {
   border: 1px solid black;
 }
   /* Capsules header */
-  #navigation h2 {
-    font-weight: 600;
+  #navigation #navigationHeader h2 {
+    display: inline-block;
+    font-weight: 700;
   }
+  #navigation #navigationHeader input[type=file] {
+    width: 0;
+    height: 0;
+  }
+  #navigation #navigationHeader label {
+    position: relative;
+    top: -2px;
+
+    cursor: pointer;
+  }
+  #navigation label:hover {
+    background-color: #eee;
+    border-radius: 50%;
+  }  
   #navigation #capsules {
     display: inline-block;
 
