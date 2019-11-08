@@ -2,6 +2,7 @@
 trainings management implement
 
 # Change logs
+0.2.5 - refactor: Add training search
 0.2.4 - refactor: Add select mode (anl/nl)
 0.2.3 - refactor: Add trainings view
 0.2.2 - refactor: Try to load trainings
