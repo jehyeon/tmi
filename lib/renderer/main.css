@@ -78,11 +78,15 @@ html, body {
 
   overflow-y: scroll;
 }
-
+  #main #settings #form {
+    display: inline-block;
+  }
+  #main #settings #submit {
+    display: none;
+  }
   #main #trainings {
     list-style: none;
   }
-
   #main #trainings li.training {
     padding: 5px;
     margin-top: 5px;
