@@ -29,15 +29,15 @@ html, body {
     height: 0;
   }
   #navigation #navigationHeader label {
-    position: relative;
-    top: -2px;
-
+    display: block;
     cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 0px 10px 10px 10px;
   }
-  #navigation label:hover {
-    background-color: #eee;
-    border-radius: 50%;
-  }  
+
   #navigation #capsules {
     display: inline-block;
 
@@ -46,6 +46,11 @@ html, body {
   }
   #navigation #capsules .capsule {
     cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 10px;
   }
   #navigation #capsules .capsule[selected=true] {
     color: red;
