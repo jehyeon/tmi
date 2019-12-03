@@ -1,7 +1,15 @@
 # tmi
 trainings management implement
 
-# Change logs
+## how to start
+```
+$ git clone https://github.com/jehyeon/tmi.git
+$ cd tmi
+$ npm install
+$ npm start
+```
+
+### Change logs
 - 0.2.7 - fix: Fix issue to load wrong target
 - 0.2.6 - refactor: Add delete training function
 - 0.2.5 - refactor: Add training search
