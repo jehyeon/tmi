@@ -8,35 +8,40 @@
     <link href="./main.css" rel="stylesheet" />
   </head>
   <body>
+    <!-- Navigation -->
     <div id="navigation" class="no-drag">
-      <h2>Capsules</h2>
-      <input id="file" type="file" webkitdirectory directory />
-      <label for="file">+</label>
+      <div id="navigationHeader">
+        <h2>Capsules</h2>
+        <input id="file" type="file" webkitdirectory directory />
+        <label for="file">+</label>
+      </div>
       <ul id="capsules">
-        <!-- ex.
-        <li class="capsule">
-          <h3>consumerApp</h3>
-          <ul class="targets">
-            <li class="target">bixby-mobile-ko-KR</li>
-            <li class="target">bixby-watch-ko-KR</li>
-          </ul>
-        </li>
-        -->
+        <!-- capsule elements -->
+      </ul>
+      <ul id="targets">
+        <!-- target elements -->
       </ul>
     </div>
+    <!-- Capsule context menu -->
+    <div id="capsuleContextMenu">delete this capsule</div>
+
+    <!-- Main -->
     <div id="main">
-      <input id="search-bar" type="text" />
-      <select id="mode">
-        <option value="anl">ANL</option>
-        <option value="nl">NL</option>
-      </select>
-      <button id="deleteModeButton" on="false">Delete</button>
+      <div id="settings">
+        <input id="mode" type="checkbox" name="mode">
+        <label for="mode">NL mode</label>
+        <form id="form">
+          <input id="searchQuery" type="text">
+          <input id="submit" type="submit" value="Search">
+        </form>
+        <button id="deleteButton" type="button">Delete</button>
+      </div>
       <ul id="training-infos">
       </ul>
       <ul id="trainings">
 
       </ul>
     </div>
-    <script src="main_render.js"></script>
+    <script src="renderer.js"></script>
   </body>
 </html>
