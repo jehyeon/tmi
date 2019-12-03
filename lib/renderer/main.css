@@ -36,6 +36,12 @@ html, body {
     border: 1px solid #ddd;
     border-radius: 10px;
     margin: 0px 10px 10px 10px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 19pt;
+  }
+  #navigation #navigationHeader label:hover {
+    box-shadow: 1px 1px #eee;
   }
 
   #navigation #capsules {
@@ -51,9 +57,17 @@ html, body {
     border: 1px solid #ddd;
     border-radius: 10px;
     margin: 10px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 15pt;
+    
+    color: #777;
+  }
+  #navigation #capsules .capsule:hover {
+    box-shadow: 2px 2px #eee;
   }
   #navigation #capsules .capsule[selected=true] {
-    color: red;
+    color: black;
   }
   #capsuleContextMenu {
     position: absolute;
