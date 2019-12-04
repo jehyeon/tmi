@@ -11,13 +11,14 @@
     <!-- Navigation -->
     <div id="navigation" class="no-drag">
       <div id="navigationHeader">
-        <h2>Capsules</h2>
+        <ul id="capsules">
+          <!-- capsule elements -->
+        </ul>        
+        <!-- <h2>Capsules</h2> -->
         <input id="file" type="file" webkitdirectory directory />
         <label for="file">+</label>
       </div>
-      <ul id="capsules">
-        <!-- capsule elements -->
-      </ul>
+
       <ul id="targets">
         <!-- target elements -->
       </ul>
@@ -28,12 +29,13 @@
     <!-- Main -->
     <div id="main">
       <div id="settings">
-        <input id="mode" type="checkbox" name="mode">
-        <label for="mode">NL mode</label>
         <form id="form">
           <input id="searchQuery" type="text">
           <input id="submit" type="submit" value="Search">
         </form>
+        <input id="mode" type="checkbox" name="mode">
+        <label for="mode"></label>
+        <span>NL mode</span>
         <button id="deleteButton" type="button">Delete</button>
       </div>
       <ul id="training-infos">

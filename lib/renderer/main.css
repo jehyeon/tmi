@@ -9,6 +9,12 @@
 html, body {
   width: 100%;
   height: 100%;
+  overflow: hidden;
+}
+
+/* Remove focus outline */
+input:focus {
+  outline-width: 0;
 }
 
 #navigation {
@@ -20,6 +26,13 @@ html, body {
   height: 100%;
 }
   /* Capsules header */
+  #navigation #navigationHeader {
+    position: absolute;
+    display: inline-block;
+    width: 76px;
+    height: 100%;
+    border-right: 1px solid #ddd;
+  }
   #navigation #navigationHeader h2 {
     display: inline-block;
     font-weight: 700;
@@ -29,15 +42,21 @@ html, body {
     height: 0;
   }
   #navigation #navigationHeader label {
-    position: relative;
-    top: -2px;
-
+    display: block;
     cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 0px 10px 10px 10px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 19pt;
   }
-  #navigation label:hover {
-    background-color: #eee;
-    border-radius: 50%;
-  }  
+  #navigation #navigationHeader label:hover {
+    box-shadow: 2px 2px #eee;
+  }
+
   #navigation #capsules {
     display: inline-block;
 
@@ -46,10 +65,45 @@ html, body {
   }
   #navigation #capsules .capsule {
     cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 15pt;
+    
+    color: #777;
   }
+  #navigation #capsules .capsule:hover {
+    box-shadow: 2px 2px #eee;
+  }
+  
+  #navigation #capsules .capsule span.capsuleBubble {
+    display: none;
+  }
+
+  #navigation #capsules .capsule:hover span.capsuleBubble {
+    position: absolute;
+    display: inline;
+    
+    margin: 7px 0 0 24px;
+    padding: 9px;
+
+    font-size: 11pt;
+    border: 1px solid #eee;
+    border-radius: 18px;
+    line-height: 1em;
+    background: #333;
+    color: white;
+    z-index: 100;
+  }
+
   #navigation #capsules .capsule[selected=true] {
-    color: red;
+    color: black;
   }
+
   #capsuleContextMenu {
     position: absolute;
     display: none;
@@ -58,14 +112,23 @@ html, body {
   }
 
   #navigation #targets {
+    position: absolute;
+    left: 80px;
     display: inline-block;
+    
+    width: 200px;
+    height: 100%;
+    padding: 10px 14px 10px 14px;
+    color: #919193;
+    font-size: 13pt;
     list-style: none;
   }
   #navigation #targets .target {
     cursor: pointer;
+    padding: 0 0 5px 0;
   }
   #navigation #targets .target[selected=true] {
-    color: red;
+    color: black;
   }  
 
 #main {
@@ -73,13 +136,47 @@ html, body {
   left: 250px;
   
   width: calc(100% - 250px - 50px);  /* 100% - navigation.width - padding */
-  height: calc(100% - 50px);  /* 100% - padding */
-  padding: 25px;
+  height: 100%;
+  padding: 0 25px 0 25px;
 
   overflow-y: scroll;
 }
+  #main #settings input[id='mode'] {
+    display: none;
+  }
+  #main #settings input[id='mode'] + label {
+    position: relative;
+    top: 6px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-left: 15px;
+    border: 2px solid #54E88F;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  #main #settings input[id='mode'] + label + span {
+    position: relative;
+    display: inline-block;
+    line-height: 24px;
+    margin-left: 5px;
+    color: #54E88F;
+  }
+  #main #settings input[id='mode']:checked + label {
+    background: #54E88F;
+  }
+  #main #settings #deleteButton {
+    display: none;
+  }
   #main #settings #form {
     display: inline-block;
+  }
+  #main #settings #form #searchQuery {
+    border: 1px solid #aaa;
+    border-radius: 15px;
+    height: 30px;
+    width: 250px;
+    padding: 0 0 0 10px;
   }
   #main #settings #submit {
     display: none;
@@ -88,8 +185,12 @@ html, body {
     list-style: none;
   }
   #main #trainings li.training {
-    padding: 5px;
-    margin-top: 5px;
-    border-radius: 5px;
+    margin-top: 10px;
+    padding: 10px;
+    
     border: 1px solid #eee;
+    border-radius: 21px;
+  }
+  #main #trainings li.training:hover {
+    background: #ddd;
   }
