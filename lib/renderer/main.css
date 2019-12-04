@@ -20,6 +20,13 @@ html, body {
   height: 100%;
 }
   /* Capsules header */
+  #navigation #navigationHeader {
+    position: absolute;
+    display: inline-block;
+    width: 76px;
+    height: 100%;
+    border-right: 1px solid #ddd;
+  }
   #navigation #navigationHeader h2 {
     display: inline-block;
     font-weight: 700;
@@ -77,14 +84,23 @@ html, body {
   }
 
   #navigation #targets {
+    position: absolute;
+    left: 80px;
     display: inline-block;
+    
+    width: 200px;
+    height: 100%;
+    padding: 10px 14px 10px 14px;
+    color: #919193;
+    font-size: 13pt;
     list-style: none;
   }
   #navigation #targets .target {
     cursor: pointer;
+    padding: 0 0 5px 0;
   }
   #navigation #targets .target[selected=true] {
-    color: red;
+    color: black;
   }  
 
 #main {
