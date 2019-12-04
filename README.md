@@ -10,6 +10,7 @@ $ npm start
 ```
 
 ### Change logs
+- 0.2.9 - fix: wrong whitespace was included to data when in NL mode
 - 0.2.8 - refactor: Apply temporary style
 - 0.2.7 - fix: Fix issue to load wrong target
 - 0.2.6 - refactor: Add delete training function
