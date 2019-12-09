@@ -107,8 +107,28 @@ input:focus {
   #capsuleContextMenu {
     position: absolute;
     display: none;
-    padding: 5px;
-    background-color: #aaa;
+    width: 150px;
+
+    padding: 10px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 11pt;
+  }
+
+  #capsuleContextMenu ul {
+    list-style: none;
+  }
+  
+  #capsuleContextMenu ul .context-button {
+    border-bottom: 1px solid #eee;
+    padding: 3px 0 3px 0;
+  }
+  #capsuleContextMenu ul .context-button:hover {
+    font-weight: 400;
+  }
+  #capsuleContextMenu ul .context-button:last-child {
+    border: 0;
   }
 
   #navigation #targets {
