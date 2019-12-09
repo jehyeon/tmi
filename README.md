@@ -10,6 +10,7 @@ $ npm start
 ```
 
 ### Change logs
+- 0.2.12 - feat: Add temporary tool-tip
 - 0.2.11 - feat: Add update capsule - refresh training datas (stable for 0.1.6)
 - 0.2.10 - feat: Update the context menu more universally
 - 0.2.9 - fix: wrong whitespace was included to data when in NL mode
