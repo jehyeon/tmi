@@ -177,8 +177,12 @@ input:focus {
     background: white;
     border: 1px solid #aaa;
     border-radius: 10px;
+    font-size: 10pt;
     z-index: 10;
   }
+  #main #settings #how-to-use-icon + #how-to-use-tool-tip ul {
+    list-style: none;
+  } 
   #main #settings #how-to-use-icon:hover + #how-to-use-tool-tip {
     display: inline-block;
   }
