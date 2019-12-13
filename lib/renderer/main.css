@@ -211,7 +211,7 @@ input:focus {
     background: #54E88F;
   }
   #main #settings #deleteButton {
-    display: none;
+    /* display: none; */
   }
   #main #settings #form {
     display: inline-block;
@@ -235,7 +235,12 @@ input:focus {
     
     border: 1px solid #eee;
     border-radius: 21px;
+
+    cursor: pointer;
   }
   #main #trainings li.training:hover {
     background: #ddd;
   }
+  #main #trainings li.training[checked='true'] {
+    background: pink;
+  }  
