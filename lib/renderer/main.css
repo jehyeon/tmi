@@ -16,6 +16,9 @@ html, body {
 input:focus {
   outline-width: 0;
 }
+button:focus {
+  outline-width: 0;
+}
 
 #navigation {
   position: absolute;
@@ -211,7 +214,22 @@ input:focus {
     background: #54E88F;
   }
   #main #settings #deleteButton {
-    /* display: none; */
+    position: relative;
+    top: 6px;
+    margin-left: 10px;
+    width: 24px;
+    height: 24px;
+    border: 2px solid red;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+  }
+  #main #settings #deleteButtonText {
+    display: inline-block;
+    margin-left: 5px;
+    line-height: 24px;
+    font-size: 13pt;
+    color: red;
   }
   #main #settings #form {
     display: inline-block;

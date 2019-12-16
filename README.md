@@ -10,6 +10,7 @@ $ npm start
 ```
 
 ### Change logs
+- 0.2.14 - feat: Add delete training function
 - 0.2.13 - feat: Update search logic and tool-tip
 - 0.2.12 - feat: Add temporary tool-tip
 - 0.2.11 - feat: Add update capsule - refresh training datas (stable for 0.1.6)
