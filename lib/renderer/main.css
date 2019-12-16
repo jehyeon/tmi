@@ -12,6 +12,15 @@ html, body {
   overflow: hidden;
 }
 
+/* Scroll bar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+}
+
 /* Remove focus outline */
 input:focus {
   outline-width: 0;
