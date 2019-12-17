@@ -1,4 +1,5 @@
 # bixby files
 *.bxb
+dist/
 
 node_modules/
