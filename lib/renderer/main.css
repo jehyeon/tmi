@@ -198,6 +198,7 @@ button:focus {
   #main #settings #how-to-use-icon:hover + #how-to-use-tool-tip {
     display: inline-block;
   }
+  /* NL mode */
   #main #settings input[id='mode'] {
     display: none;
   }
@@ -222,13 +223,14 @@ button:focus {
   #main #settings input[id='mode']:checked + label {
     background: #54E88F;
   }
+  /* Delete button */
   #main #settings #deleteButton {
     position: relative;
     top: 6px;
     margin-left: 10px;
     width: 24px;
     height: 24px;
-    border: 2px solid red;
+    border: 2px solid pink;
     border-radius: 50%;
     background: #fff;
     cursor: pointer;
@@ -238,7 +240,7 @@ button:focus {
     margin-left: 5px;
     line-height: 24px;
     font-size: 13pt;
-    color: red;
+    color: pink;
   }
   #main #settings #form {
     display: inline-block;
@@ -252,6 +254,40 @@ button:focus {
   }
   #main #settings #submit {
     display: none;
+  }
+  /* All check box */
+  #main #settings input[id='all'] {
+    display: none;
+  }
+  #main #settings .all {
+    display: none;
+  }
+  #main #settings input[id='all'] + label {
+    /* position: relative;
+    top: 6px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-left: 15px;
+    border: 2px solid #54E88F;
+    border-radius: 50%;
+    cursor: pointer; */
+    
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border: 2px solid #aaa;
+  }
+  #main #settings input[id='all'] + label + span {
+    /* position: relative;
+    display: inline-block;
+    line-height: 24px;
+    margin-left: 5px;
+    color: #54E88F; */
+    color: #aaa;
+  }
+  #main #settings input[id='all']:checked + label {
+    background: #aaa;
   }
   #main #trainings {
     list-style: none;
