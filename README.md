@@ -10,6 +10,7 @@ $ npm start
 ```
 
 ### Change logs
+- 0.2.17 - feat: Add top button
 - 0.2.16 - feat: Add data information (view)
 - 0.2.15 - feat: Add select all items button
 - 0.2.14 - feat: Add delete training function
