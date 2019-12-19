@@ -34,13 +34,15 @@
     <!-- Main -->
     <div id="main">
       <div id="settings">
-        <form id="form">
-          <input id="searchQuery" type="text">
-          <input id="submit" type="submit" value="Search">
-        </form>
-        <span id="how-to-use-icon">?</span>
-        <div id="how-to-use-tool-tip">
-          <ul>
+        <div class="setting">
+          <form id="form">
+            <input id="searchQuery" type="text">
+            <input id="submit" class="hidden" type="submit" value="Search">
+          </form>
+        </div>
+        <div class="setting">
+          <span id="how-to-use-icon">?</span>
+          <ul id="how-to-use-tool-tip">
             <li>Multiple options are available.</li>
             <li>nl: NL, anl: ANL</li>
             <li>g: Goal, r: Route</li>
@@ -48,14 +50,20 @@
             <li>node: node (ex. DeleteContact:continue:ContactInfo -> ContactInfo)</li>
           </ul>
         </div>
-        <input id="mode" type="checkbox" name="mode">
-        <label for="mode"></label>
-        <span>NL mode</span>
-        <button id="deleteButton" type="button"></button>
-        <span id="deleteButtonText">Delete</span>
-        <input id="all" type="checkbox" name="all">
-        <label for="all" class="all"></label>
-        <span class="all">All</span class="all">
+        <div class="setting">
+          <input id="mode" type="checkbox" name="mode" class="hidden">
+          <label for="mode" class="button" id="modeButton"></label>
+          <span>NL mode</span>
+        </div>
+        <div class="setting">
+          <button id="deleteButton" class="button" type="button"></button>
+          <span id="deleteButtonText">Delete</span>
+        </div>
+        <div class="setting all">
+          <input id="all" type="checkbox" name="all" class="hidden">
+          <label for="all" id="allButton"></label>
+          <span>All</span>
+        </div>
       </div>
       <ul id="training-infos">
       </ul>
