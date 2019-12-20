@@ -209,6 +209,7 @@ button:focus {
     border-radius: 50%;
     
     background: #fff;
+    cursor: pointer;
   }
   #main #settings .setting #modeButton {
     border-color: #54E88F;
